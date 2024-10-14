@@ -87,7 +87,7 @@ contract SeventhCaller {
 
 4. Click "Deploy". 
 
-5. Move over to the Metamask Chrome Extension and click "Approve"
+5. Move over to the Metamask Chrome Extension and click "Approve".
 
 6. You'll see the various functions and variables in the "Deployed Contracts" secion. 
 
@@ -98,7 +98,7 @@ contract SeventhCaller {
 
 ### Easy mode for simulating multiple accounts in Remix
 
-1. In the Environment dropdown, change the value to "Remix VM (London)". This will givey ou accounts with Ether that are virtual.
+1. In the Environment dropdown, change the value to "Remix VM (London)". This will give you accounts with Ether that are virtual.
 
 2. Click "Deploy".
 
