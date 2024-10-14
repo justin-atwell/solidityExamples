@@ -37,7 +37,7 @@ This quick tutorial is designed to get you up and running on the Linea network w
 6. If you wish to add changes to Github, Click the Git tab and follow the instructions to setup source control. 
 
 
-# Step 3. Running the code
+### Step 3. Running the code
 
 1. Paste the following code into `SeventCaller.sol`:
 
@@ -90,4 +90,14 @@ contract SeventhCaller {
 
 7. On the top right in the "Value" box, make the value 1 and change the dropdown to Ether. The function we are going to invoke is a payable function which accepts payment with the function call. Notice Line 12 in the solidity contract. This requires us to put a value of 1 in the box.
 
-8. Click the "Deposit" button.
+8. Click the "Deposit" button. This confirms the contract is deployed to the EVM
+
+
+
+### Easy mode for simulating multiple accounts in Remix
+
+1. In the Environment dropdown, change the value to "Remix VM (London)". This will givey ou accounts with Ether that are virtual.
+
+2. Click "Deploy".
+
+3. Go through seven different accounts, depositing exactly 1 Ether for each. On any of the first six deposits, click the `winner` function and you should see an empty contract. On the seventh deposit function, click the `winner` function and you should see the seventh account that submitted 1 Ether.
