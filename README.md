@@ -6,6 +6,9 @@ This quick tutorial is designed to get you up and running on the Linea network w
 2. Configure Remix
 3. Deploy a short smart contract deployment with Remix and Metamask.
 
+## What the code does
+
+This code is a play on the "Seventh Caller" to a radio station. Each account needs to submit exactly 1 Ether to be a "caller". The seventh account that deposits 1 Ether will declared the winner.
 
 ### Step 1: Metamask Setup
 
