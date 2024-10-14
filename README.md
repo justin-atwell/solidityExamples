@@ -2,7 +2,7 @@
 
 This quick tutorial is designed to get you up and running on the Linea network with as little work as possible. In the three secions below, I hope you'll see just how easy it is to get up and running with little effort.
 
-1. Create an Ethereum account and setup Metamask for Remix
+1. Create an Ethereum account and setup Metamask for Remix.
 2. Configure Remix
 3. Deploy a short smart contract deployment with Remix and Metamask.
 
@@ -16,7 +16,7 @@ This code is a play on the "Seventh Caller" to a radio station. Each account nee
 
 2. Follow instructions to create a new Ethereum account or import an existing account (Existing accounts are easier since some faucets require Ethereum mainnnet transactions as a protection against spam.)
 
-3. After your account is created, Click the network dropdown on the top left and select "Linea Sepolia"
+3. After your account is created, Click the network dropdown on the top left and select "Linea Sepolia".
 
 4. If you are using a brand new account, you will need to find some Linea Sepolia Testnet Eth or bridge from Ethereum.
 
@@ -93,7 +93,7 @@ contract SeventhCaller {
 
 7. On the top right in the "Value" box, make the value 1 and change the dropdown to Ether. The function we are going to invoke is a payable function which accepts payment with the function call. Notice Line 12 in the solidity contract. This requires us to put a value of 1 in the box.
 
-8. Click the "Deposit" button. This confirms the contract is deployed to the EVM
+8. Click the "Deposit" button. This confirms the contract is deployed to the EVM.
 
 
 ### Easy mode for simulating multiple accounts in Remix
