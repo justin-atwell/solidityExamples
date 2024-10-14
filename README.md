@@ -1,13 +1,17 @@
-## Seventh Caller
+## Introducing Linea
 
-This quick tutorial is designed to get you up and running on the Linea network with as little work as possible. We'll begin by configuring Remix, then we'll go through a short smart contract deployment with Metamask. Let's get started!
+This quick tutorial is designed to get you up and running on the Linea network with as little work as possible. In the three secionts below I hope you'll see just how easy it is to get up and running on Linea. 
+
+1. Create an Ethereum account and setup Metamask for Remix
+2. Configure Remix
+3. Deploy a short smart contract deployment with Remix and Metamask.
 
 
 ### Step 1: Metamask Setup
 
 1. Install the Metamask [Chrome Extension](https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
 
-2. Follow instructions to create a new Ethereum account or import an existing account (Existing accounts are easier since some faucets require Ethereum mainnnet transactions to prevent spam.)
+2. Follow instructions to create a new Ethereum account or import an existing account (Existing accounts are easier since some faucets require Ethereum mainnnet transactions as a protection against spam.)
 
 3. After your account is created, Click the network dropdown on the top left and select "Linea Sepolia"
 
@@ -18,8 +22,7 @@ This quick tutorial is designed to get you up and running on the Linea network w
 
 ### Step 2: Remix Setup
 
-1. Remix is a powerful web-based IDE. One of the strongest features it has is managing various plugins and accounts which are often used in web3. Please note: There are many ways to deploy Smart Contracts. This guide is meant to connect you in as little time as possible. For other options, please check out the [Linea Support page](https://docs.linea.build/developers/quickstart/deploy-smart-contract) for Smart Contract Deployment.
-
+1. Remix is a powerful web-based IDE. One of the strongest features it has is managing various plugins and accounts which are often used in web3 (Metamask, Github, etc). Please note: There are many ways to deploy Smart Contracts. This guide is meant to connect you in as little time as possible. For other options, please check out the [Linea Support page](https://docs.linea.build/developers/quickstart/deploy-smart-contract) for Smart Contract Deployment.
 
 2. Follow the Remix setup steps.
 
@@ -27,9 +30,9 @@ This quick tutorial is designed to get you up and running on the Linea network w
 
 4. Delete the existing .sol files.
 
-5. Navigate to Solidity Compiler on the left hand navigation bar and select 0.8.19 as the compiler version. This is the London build of the EVM that Linea uses. 
+5. Navigate to Solidity Compiler on the left hand navigation bar and select 0.8.19 as the compiler version. This is the London build of the EVM that is utilized by Linea. 
 
-6. Navigate to the "Deploy & Run Transactions" navigation bar. In the "Environment" drop down, change the option to `Injected Provider - Metamask`. This does two important things: First, it abstracts private keys from code. This is critical for security. Secondly, it allows you to interact with your smart contract in real time by using the RPC url in Metamask (In our case, Linea Sepolia). This will ensure Remix is operating under the versions as Metamask.
+6. Navigate to the "Deploy & Run Transactions" navigation bar. In the "Environment" drop down, change the option to `Injected Provider - Metamask`. This does two important things: First, it abstracts private keys from code. This is critical for security. Secondly, it allows you to interact with your smart contract in real time by using the RPC url embedded in Metamask (In our case, Linea Sepolia).
 
 6. If you wish to add changes to Github, Click the Git tab and follow the instructions to setup source control. 
 
@@ -74,3 +77,17 @@ contract SeventhCaller {
     }
 }
 ```
+
+2. Hit the `Play` button on the top left or navigate to "Solidity Compiler" on the left hand navigation and click "Compile Seventh Caller". 
+
+3. Move back over to the Deploy and Run Transactions tab and ensure you are using the same account you used to acquire Linea ETH from the steps above. This will ensure you are interacting with a live Smart Contract on Metamask instead of the integrated IDE.
+
+4. Click "Deploy". 
+
+5. Move over to the Metamask Chrome Extension and click "Approve"
+
+6. You'll see the various functions and variables in the "Deployed Contracts" secion. 
+
+7. On the top right in the "Value" box, make the value 1 and change the dropdown to Ether. The function we are going to invoke is a payable function which accepts payment with the function call. Notice Line 12 in the solidity contract. This requires us to put a value of 1 in the box.
+
+8. Click the "Deposit" button.
