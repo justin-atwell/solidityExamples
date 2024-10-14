@@ -1,6 +1,6 @@
 ## Introducing Linea
 
-This quick tutorial is designed to get you up and running on the Linea network with as little work as possible. In the three secionts below I hope you'll see just how easy it is to get up and running on Linea. 
+This quick tutorial is designed to get you up and running on the Linea network with as little work as possible. In the three secions below, I hope you'll see just how easy it is to get up and running with little effort.
 
 1. Create an Ethereum account and setup Metamask for Remix
 2. Configure Remix
@@ -37,12 +37,12 @@ This code is a play on the "Seventh Caller" to a radio station. Each account nee
 
 6. Navigate to the "Deploy & Run Transactions" navigation bar. In the "Environment" drop down, change the option to `Injected Provider - Metamask`. This does two important things: First, it abstracts private keys from code. This is critical for security. Secondly, it allows you to interact with your smart contract in real time by using the RPC url embedded in Metamask (In our case, Linea Sepolia).
 
-6. If you wish to add changes to Github, Click the Git tab and follow the instructions to setup source control. 
+7. If you wish to add changes to Github, Click the Git tab and follow the instructions to setup source control. 
 
 
 ### Step 3. Running the code
 
-1. Paste the following code into `SeventCaller.sol`:
+1. Paste the following code into `SeventhCaller.sol`:
 
 ```
 // SPDX-License-Identifier: MIT
@@ -94,7 +94,6 @@ contract SeventhCaller {
 7. On the top right in the "Value" box, make the value 1 and change the dropdown to Ether. The function we are going to invoke is a payable function which accepts payment with the function call. Notice Line 12 in the solidity contract. This requires us to put a value of 1 in the box.
 
 8. Click the "Deposit" button. This confirms the contract is deployed to the EVM
-
 
 
 ### Easy mode for simulating multiple accounts in Remix
